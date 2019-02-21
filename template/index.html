@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">Free OCR App</h3>
+            </div>
+        </header>
+
+        <main role="main">
+            <div class="card mx-auto" style="width: 30rem; background-color:rgb(250, 214, 166); border-radius:20px">
+                <div class="card-body">
+                    <form class="form" action="/api/bills" enctype="multipart/form-data" method="POST">
+                        <div class="flex flex-nowrap">
+                            <div>
+                                <input class="form-input" style="background-color:whitesmoke" type="file" name="bill" size="100" />
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-5">Upload</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>Designed and Developed by <a href="">Ashish Bagaddeo</a>.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
